@@ -1,4 +1,3 @@
-//var num = unnumero; binario = unnumero.toString(2);
 function toBinary(numero){
     var resultado = [], i;
     for(i= numero; i>0; i= parseInt(i/2)){

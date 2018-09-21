@@ -1,15 +1,15 @@
-function fibonacci(numero) {
-    var var1 = 0;
-    var var2 = 1;
-    var var3;
+function fibonacci(numerito) {
+    var fiboC = 0;
+    var fiboU = 1;
+    var fibo;
 
-    console.log(var1 + "");
-    console.log(var2 + "");
+    console.log(fiboC + "");
+    console.log(fiboU + "");
 
-    for (var i = 3; i <= numero; i++) {
-        var3 = var1 + var2;
-        var1 = var2;
-        var2 = var3;
-        console.log(var3 + "");
+    for (var i = 3; i <= numerito; i++) {
+        fibo = fiboC + fiboU;
+        fiboC = fiboU;
+        fiboU = fibo;
+        console.log(fibo + "");
     }
 }

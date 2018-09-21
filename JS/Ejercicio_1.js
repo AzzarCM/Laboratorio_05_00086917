@@ -1,22 +1,20 @@
 
-function texto(palabra)
+function texto(word)
 {
-	palabra=prompt("Escribe una palabra").toLowerCase();
+	word=word.replace(/ /g, "");
  
-	// eliminamos los espacios en blanco
-	palabra=palabra.replace(/ /g, "");
- 
-	for (var i=0;i<palabra.length;i++){
-		if(palabra[i]!=palabra[palabra.length-i-1]){
+	for (var i=0;i<word.length;i++){
+		if(word[i]!=word[word.length-i-1]){
 			return false;
 		}
 	}
 	return true;
 }
- 
+//Ahora pegamos las alertas
+
 if(texto())
 {
-	alert("Esto es palíndromo");
+	alert("ES PALINDROMO!!");
 }else{
-	alert("Esto no es palíndromo")
+	alert("NO ES PALINDROMO");
 }
